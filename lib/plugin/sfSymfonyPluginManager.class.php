@@ -62,7 +62,7 @@ class sfSymfonyPluginManager extends sfPluginManager
      */
     public function installWebContent($plugin, $sourceDirectory)
     {
-        $webDir = $sourceDirectory.DIRECTORY_SEPARATOR.$plugin.DIRECTORY_SEPARATOR.'web';
+        $webDir = $sourceDirectory.DIRECTORY_SEPARATOR.$plugin.DIRECTORY_SEPARATOR.'public';
         if (is_dir($webDir)) {
             $this->dispatcher->notify(new sfEvent($this, 'application.log', array('Installing web data for plugin')));
 

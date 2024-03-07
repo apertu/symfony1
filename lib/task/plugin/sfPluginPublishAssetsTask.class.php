@@ -87,7 +87,7 @@ EOF;
      */
     protected function installPluginAssets($plugin, $dir, $relative)
     {
-        $webDir = $dir.DIRECTORY_SEPARATOR.'web';
+        $webDir = $dir.DIRECTORY_SEPARATOR.'public';
 
         if (is_dir($webDir)) {
             if ($relative) {
